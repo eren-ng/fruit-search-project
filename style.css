@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(255, 234, 73), orangered);
+}
+
+input {
+ padding: 10px;
+ background-color: rgb(255, 255, 255, 0.2);
+ border-color: rgb(251, 182, 53);
+}
+
+/* centers the search container on the page */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* sets search input and suggestions to same width */
+.search-container input,
+.search-container .suggestions {
+  width: 300px;
+  height: 40px;
+}
+
+/* sets position of input and suggestions div on top of each other */
+.search-container input {
+  top: 50vh;
+}
+.search-container .suggestions {
+  top: 55vh;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 5px;
+  margin-top: 0px;
+}
+
+/* styling when ul has suggestions added to DOM */
+ul.has-suggestions {
+  background-color: rgb(255, 255, 255, 0.2);
+  border: 1px;
+  border-color: rgb(251, 182, 53);
+}
+
+ul li {
+  width: 300px;
+  height: 35px;
+  padding: 10px; 
+  margin-left: -5px;
+}
+
+/* highlights suggestions when mouse hovers */
+ul li:hover {
+  background-color: rgba(247, 120, 9);
+}
